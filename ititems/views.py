@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from ititems.models import Ititems
+from ititems.serializers import ItitemsSerializer
 
-# Create your views here.
+
+class ItitemsViewSet(viewsets.ModelViewSet):
+    queryset = Ititems.objects.all()
+    serializer_class = ItitemsSerializer
