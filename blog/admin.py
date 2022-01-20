@@ -6,4 +6,3 @@ from blog.models import Post
 class PostAdmin(admin.ModelAdmin):
     list_display = ["id", "title"]
     search_fields = ["title"]
-

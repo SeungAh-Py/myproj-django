@@ -12,4 +12,3 @@ class TimestampedModel(models.Model):
 class Post(TimestampedModel):
     title = models.CharField(max_length=100, db_index=True)
     content = models.TextField()
-

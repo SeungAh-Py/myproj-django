@@ -1,9 +1,11 @@
 from django.urls import reverse_lazy
 from django.views.generic import ListView, CreateView
 from rest_framework import viewsets
+
+from shop.forms import ReviewForm
 from shop.models import Review
 from shop.serializers import ReviewSerializer
-from shop.templates.shop.foms import ReviewForm
+
 
 review_list = ListView.as_view(model=Review)
 

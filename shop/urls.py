@@ -1,6 +1,7 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from shop.views import review_list, ReviewViewSet, review_new
+from shop.views import review_list, review_new, ReviewViewSet
+
 
 app_name = "shop"
 

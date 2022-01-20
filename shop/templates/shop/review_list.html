@@ -8,14 +8,15 @@
     <title>Review List</title>
 </head>
 <body>
+
     <h1>Review List</h1>
 
-{% for review in review_list %}
-    <div>
-    {{ vreview.content }}
-    {{ review.score }}
-    </div>
-{% endfor %}
+    {% for review in review_list %}
+        <div>
+            {{ review.content }}
+            {{ review.score }}
+        </div>
+    {% endfor %}
 
     <hr/>
     <a href="{% url "shop:review_new" %}">새 리뷰</a>
