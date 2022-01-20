@@ -13,6 +13,6 @@ ACCESS_TOKEN_LIFETIME_HOURS=0
 ACCESS_TOKEN_LIFETIME_MINUTES=0
 
 # 하나의 환경 변수로서
-DATABASE=URL=mysql://myuser:mypassword@http://127.0.0.1:3306/mydb
+DATABASE_URL=mysql://myuser:mypassword@http://127.0.0.1:3306/mydb
 
 ```
